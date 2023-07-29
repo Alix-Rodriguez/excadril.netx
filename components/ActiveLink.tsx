@@ -1,6 +1,5 @@
 import { CSSProperties, FC } from 'react';
 import { useRouter } from 'next/router';
-import activeLink from './ActiveLink.module.css'
 
 import Link from 'next/link';
 
@@ -22,7 +21,7 @@ export const ActiveLink: FC<Props> = ({ id ,text, href }) => {
 
     return (
         <Link href={ href } legacyBehavior>
-            <a className={`md:pr-5 pl-10 ${id > 1 ? 'md:border-l-2' : ''}  ${activeLink.navLetras}`} style={ asPath === href ? style : undefined }>{ text }</a>
+            <a className={`text-white text-2xl md:pr-5 pl-10 ${id > 1 ? 'md:border-l-2' : ''}`} style={ asPath === href ? style : undefined }>{ text }</a>
         </Link>
     );
 };

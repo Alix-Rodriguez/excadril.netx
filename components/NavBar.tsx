@@ -3,7 +3,6 @@ import Link from 'next/link';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
 import {useEffect, useState } from 'react';
-import activeLink from './activeLink.module.css'
 import { RxHamburgerMenu } from "react-icons/rx";
 import { GrClose } from "react-icons/gr";
 
@@ -66,10 +65,10 @@ export const Navbar = () => {
 
   return (
     <nav style={{fontFamily: '"Raleway", sans-serif',fontStyle:'oblique'}}  
-    className={`absolute z-10 w-full items-center justify-between flex mt-16 ${width ? 'px-9' : '   flex-col lg:flex-row  justify-center '}`} >
+    className={`absolute z-10 w-full items-center justify-between px-9 flex mt-16 ${width ? '' : '   flex-col lg:flex-row  justify-center '}`} >
         <Link href="/" legacyBehavior>
             <a className='basis-1/5 mb-5'>
-            <Image src="/assets/Logo.svg" alt='Logo' width={150} height={0}></Image>  
+            <Image className='' src="/assets/Logo.svg" alt='Logo' width={150} height={0}></Image>  
             </a>
         </Link>
         <ul className=' hidden items-center md:flex justify-around basis-1/2 md:min-w-max'>
@@ -82,7 +81,7 @@ export const Navbar = () => {
                 ))
                 
         }
-            <li className={`md:ml-4 lg:ml-16  ${activeLink.navLetras}`}>
+            <li className={`md:ml-4 lg:ml-16  text-white text-2xl`}>
                PE ▼
             </li>   
          </ul>
