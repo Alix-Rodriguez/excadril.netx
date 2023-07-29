@@ -9,7 +9,7 @@ export const Footer = () => {
         <footer className="bg-black gap-28 grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-7 p-10 md:gap-3 opacity-90">
 
             {/* PRIMER CONTAINER */}
-            <div className="grid gap-7 border-b-2 md:gap-5 justify-items-center md:grid-col-1  2xl:col-span-2 2xl:border-r-2">
+            <div className="grid gap-7 border-b-2 pb-3  md:gap-5 justify-items-center md:grid-col-1  2xl:col-span-2 2xl:border-r-2">
                 <div>
                     <Image src="/assets/logo.svg" alt="Logo de excadrill" width={180} height={0}/>
                 </div>
@@ -33,10 +33,10 @@ export const Footer = () => {
 
             {/* SEGUNDO CONTAINER */}
 
-            <div className="grid  border-b-2 gap-5 px-10 md:grid-col-1 2xl:col-span-2">                
+            <div className="grid   border-b-2 pb-2 gap-5 md:px-10 md:grid-col-1 2xl:col-span-2">                
                 <div className="text-white grid grid-cols-1 gap-1">
                     <h4 className="text-4xl" style={{fontFamily:'"Anton", sans-serif'}}>SERVICIOS</h4>
-                    <ul className="text-white grid grid-cols-1 gap-1 text-xl">
+                    <ul className="text-white text-lg grid grid-cols-1 gap-1 sm:text-xl">
                         <li>
                             <a href="#">Estudio geotécnico</a>
                         </li>

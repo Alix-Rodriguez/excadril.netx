@@ -3,82 +3,23 @@ import { CSSProperties } from 'react';
 import Image from 'next/image';
 
 import { MainLayout } from '../components/layouts/MainLayout';
-import camionBackGround from '../public/assets/slide.jpg'
-import lineaAmarilla from '../public/assets/header-decoslide-01.svg'
-import lineaAmarilla2 from '../public/assets/header-decoslide-02.svg'
-import logoLide from '../public/assets/logoslide.svg'
-import nosotros from '../public/assets/nosotros.png'
 
+import {
+  backGround1,
+  backGround2,
+  backGround3,
+  backGround4,
+  backGround5,
+  backGround6,
+  fontRaleway,
+  sombraImg,
+  gradianteButton,
+  ClipPath,
+  ClipPath2,
+  gradianteYellow
 
+} from '../components/styles'
 
-
-const backGround1: CSSProperties = {
-    backgroundImage: `url(${camionBackGround.src})`,
-    color: 'rgb(255, 255, 255)',
-    height: '120vh',
-    fontFamily:'"Anton", sans-serif'
-}
-
-const backGround2: CSSProperties = {
-  backgroundImage: `url(${lineaAmarilla.src})`,
-  zIndex:'2',
-  backgroundPosition:'bottom center',
-  height: '120vh',
-
-}
-
-const backGround3: CSSProperties = {
-  backgroundImage: `url(${logoLide.src})`,
-  backgroundPosition:'top right',
-  opacity:'45%',
-  height: '120vh',
-}
-
-const backGround4: CSSProperties = {
-  background: 'linear-gradient( 180deg, rgba(0, 0, 0, 1) 0%, rgba(29, 29, 27, 0.5) 10.28%, rgba(29, 29, 27, 0.5) 78.56%, rgba(0, 0, 0, 1) 100% )',
-  height: '120vh',
-
-}
-
-const backGround5: CSSProperties = {
-  backgroundImage: `url(${nosotros.src})`,
-  color: 'rgb(255, 255, 255)',
-  height: '100vh',
-  fontFamily:'"Anton", sans-serif',
-}
-
-const backGround6: CSSProperties = {
-  backgroundImage: `url(${lineaAmarilla2.src})`,
-  height: '100vh',
-  zIndex:'2',
-  backgroundPosition:'top left',
-}
-
-const fontRaleway:CSSProperties = {
-  fontFamily: '"Raleway", sans-serif'
-}
-
-const sombraImg: CSSProperties = {
-  background: 'linear-gradient( 180deg, rgba(0, 0, 0, 0) 50%, rgba(29, 29, 27, 0.5) 70%, rgba(29, 29, 27, 0.5) 80.56%, rgba(0, 0, 0, 0.7) 100% )',
-  zIndex:'1',
-}
-
-const gradianteButton: CSSProperties = {
-  background: 'linear-gradient( 90deg, rgba(255, 169, 33, 1) 0%, rgba(255, 191, 45, 1) 50%, rgba(255, 195, 55, 1) 100% )',
-  boxShadow: '0.08em 0.08em 0.3em #b1b1b1'
-}
-
-const ClipPath: CSSProperties = {
-  clipPath: 'polygon(50% 20%, 100% 0, 100% 100%, 0 100%, 0 0)'
-}
-
-const ClipPath2: CSSProperties = {
-  clipPath: 'polygon(7% 0%, 100% 0%, 93% 100%, 0% 100%)'
-}
-
-const gradianteYellow: CSSProperties = {
-  background: 'linear-gradient( 90deg, rgba(255, 169, 33, 1) 0%, rgba(255, 191, 45, 1) 50%, rgba(255, 195, 55, 1) 100% )',
-}
 
 
 export default function Home() {
@@ -223,7 +164,7 @@ export default function Home() {
             </h2>
 
             <div style={{borderTopLeftRadius:'10rem'}} className='absolute bottom-0 right-0 bg-white h-2/5 w-2/4 '></div>
-            <Image className='absolute bottom-0 right-0 lg:h-96' src="/assets/equipo-01.png" alt='imagen de contruccion' width={1200} height={0}/>
+            <Image className='absolute bottom-0 object-cover right-0 lg:h-96' src="/assets/equipo-01.png" alt='imagen de contruccion' width={1200} height={0}/>
           </section>
 
         {/*  SECCION 5 */}
