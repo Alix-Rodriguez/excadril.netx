@@ -5,6 +5,7 @@ import { useRouter } from 'next/router';
 import {useEffect, useState } from 'react';
 import { RxHamburgerMenu } from "react-icons/rx";
 import { GrClose } from "react-icons/gr";
+import Logo from '../public/assets/logo.svg'
 
 const menuItems = [
 
@@ -68,7 +69,7 @@ export const Navbar = () => {
     className={`absolute z-10 w-full items-center justify-between px-9 flex mt-16 ${width ? '' : '   flex-col lg:flex-row  justify-center '}`} >
         <Link href="/" legacyBehavior>
             <a className='basis-1/5 mb-5'>
-            <Image className='' src="/assets/Logo.svg" alt='Logo' width={150} height={0}></Image>  
+            <Image className='scale-150 sm:scale-100'  src={Logo} alt='Logo' width={150} height={0}></Image>  
             </a>
         </Link>
         <ul className=' hidden items-center md:flex justify-around basis-1/2 md:min-w-max'>
