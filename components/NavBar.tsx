@@ -27,7 +27,7 @@ const menuItems = [
   {
       id:4,  
       text: 'CONTACTO',
-      href: '/contacto'
+      href: '/contactos'
   },
 ];
 

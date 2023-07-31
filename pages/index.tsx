@@ -3,12 +3,13 @@ import { CSSProperties } from 'react';
 import Image from 'next/image';
 
 import { MainLayout } from '../components/layouts/MainLayout';
+import { Header } from '../components/layouts/Header';
 
 import {
   backGround1,
-  backGround2,
-  backGround3,
-  backGround4,
+  // backGround2,
+  // backGround3,
+  // backGround4,
   backGround5,
   backGround6,
   fontRaleway,
@@ -27,8 +28,21 @@ export default function Home() {
       <>
       <MainLayout>
 
+      <Header 
+      backGround={backGround1}
+      YellowSpan='EXPERIENCIA'
+      H2='MÁS DE 10 AÑOS'
+      h2Opcion = 'DE'
+      P1='DIAMANTINA RC, GEOTÉCNIA, CORTE DE'
+      P2='MUESTRA, LOGUÉO, TOPOGRAFÍA Y MUESTREO' 
+      styleSpan={true}  
+      CentradoSpan={false}
+      Top={true}
+      />
+
+
         {/* SECCION 1 */}
-          <section style={backGround1} className='flex flex-col relative bg-cover bg-no-repeat bg-center  items-center bg-white justify-center '>
+          {/* <section style={backGround1} className='flex flex-col relative bg-cover bg-no-repeat bg-center  items-center bg-white justify-center '>
               
               <h2 style={{zIndex:'2'}} className='tracking-widest md:top-16 lg:top-0 text-5xl  2xl:text-7xl relative md:text-6xl'>
 
@@ -48,7 +62,8 @@ export default function Home() {
           <div style={backGround2} className=' w-6/12 left-0 absolute bg-no-repeat '></div>
           <div style={backGround3} className=' w-full absolute bg-no-repeat'></div>
           <div style={backGround4} className=' w-full absolute '></div>
-          </section>
+          </section> */}
+
 
         {/*  SECCION 2 */}
 

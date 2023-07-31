@@ -5,6 +5,11 @@ import lineaAmarilla from '../public/assets/header-decoslide-01.svg'
 import lineaAmarilla2 from '../public/assets/header-decoslide-02.svg'
 import logoLide from '../public/assets/logoslide.svg'
 import nosotros from '../public/assets/nosotros.png'
+import slideNosotros from '../public/assets/slideNosotros.png'
+import slideServicio from '../public/assets/slideServicios.png'
+import slideEquipo from '../public/assets/slideEquipos.png'
+import slideContacto from '../public/assets/slideContacto.jpg'
+
 
 
 export const backGround1: CSSProperties = {
@@ -74,3 +79,34 @@ export const ClipPath2: CSSProperties = {
 export const gradianteYellow: CSSProperties = {
   background: 'linear-gradient( 90deg, rgba(255, 169, 33, 1) 0%, rgba(255, 191, 45, 1) 50%, rgba(255, 195, 55, 1) 100% )',
 }
+
+
+export const backGroundNosotros: CSSProperties = {
+  backgroundImage: `url(${slideNosotros.src})`,
+  color: 'rgb(255, 255, 255)',
+  height: '120vh',
+  fontFamily:'"Anton", sans-serif'
+}
+
+export const backGroundServicio: CSSProperties = {
+  backgroundImage: `url(${slideServicio.src})`,
+  color: 'rgb(255, 255, 255)',
+  height: '120vh',
+  fontFamily:'"Anton", sans-serif'
+}
+
+export const backGroundEquipos: CSSProperties = {
+  backgroundImage: `url(${slideEquipo.src})`,
+  color: 'rgb(255, 255, 255)',
+  height: '120vh',
+  fontFamily:'"Anton", sans-serif'
+}
+
+export const backGroundContactos: CSSProperties = {
+  backgroundImage: `url(${slideContacto.src})`,
+  color: 'rgb(255, 255, 255)',
+  height: '120vh',
+  fontFamily:'"Anton", sans-serif'
+}
+
+
