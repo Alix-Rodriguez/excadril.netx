@@ -215,6 +215,9 @@ export default function Home() {
                  
 
                   <textarea className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-yellow-500 focus:shadow-outline" placeholder="Mensaje" name="" id="" cols={30} rows={10}></textarea>
+
+
+                  <button className='text-lg border rounded w-full py-2 px-3 mt-5 text-white' style={gradianteYellow} type='submit'>ENVIAR</button>
                 </form>
             </div>
 
