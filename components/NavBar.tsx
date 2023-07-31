@@ -6,6 +6,7 @@ import {useEffect, useState } from 'react';
 import { RxHamburgerMenu } from "react-icons/rx";
 import { GrClose } from "react-icons/gr";
 import Logo from '../public/assets/logo.svg'
+import Logo2 from '../public/assets/logo2.svg'
 
 const menuItems = [
 
@@ -31,15 +32,16 @@ const menuItems = [
   },
 ];
 
-// const [img,SetImg]=useState(true)
 
 
 
 
 export const Navbar = () => {
-
+  
+    const [img,setImg]=useState<Boolean>(true)
     const [click,setClick] = useState<Boolean>(true)
     const [width,setWidth] = useState<Boolean>(false)
+    const { asPath } = useRouter();
 
    useEffect(() => {
      function handleResize() {
@@ -51,18 +53,27 @@ export const Navbar = () => {
        console.log("object")
      }
      window.addEventListener('resize', handleResize);
+
      if (window.innerWidth > 768) {
         setWidth(false);
       }else{
         setWidth(true);
       }
+
+        if(asPath == '/'){
+          setImg(true)
+       } else {
+          setImg(false)
+       } 
+
      return () => window.removeEventListener('resize', handleResize);
 
    }, []);
 
  
-    const { asPath } = useRouter();
-    // if(asPath == '/') 
+   
+
+
 
   return (
     <>
@@ -70,7 +81,7 @@ export const Navbar = () => {
     className={`absolute z-10 w-full items-center justify-between md:justify-around px-9 flex mt-16 ${width ? '' : '   flex-col lg:flex-row  justify-center '}`} >
         <Link href="/" legacyBehavior>
             <a className='basis-1/5 mb-5'>
-            <Image className='scale-150 sm:scale-100'  src={Logo} alt='Logo' width={150} height={0}></Image>  
+            <Image className={`${img ? 'scale-150' : 'scale-150 md:w-80'} sm:scale-100 `}  src={ img ? Logo : Logo2} alt='Logo' width={150} height={0}></Image>  
             </a>
         </Link>
         <ul className=' hidden items-center md:flex justify-around basis-1/2 md:min-w-max'>
