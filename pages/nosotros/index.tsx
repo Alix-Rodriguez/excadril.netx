@@ -67,7 +67,7 @@ export default function Nosotros() {
 
         {/*  SECCION 4 */}
 
-        <section className='p-3 sm:p-10 md:p-10 w-full grid grid-cols-1 lg:grid-cols-2 justify-center items-center '>
+        <section className='p-3 2xl:p-0 sm:p-10 md:p-10 w-full grid grid-cols-1 lg:grid-cols-2 justify-center items-center '>
 
           <div className="flex flex-col justify-center items-center gap-6 ">
             <div style={fontRaleway} className='relative font-semibold text-black text-sm sm:text-lg p-1 pl-20 gap-4 flex flex-col'>
@@ -82,7 +82,7 @@ export default function Nosotros() {
             </div>
           </div>
 
-          <div className="sm:p-5">
+          <div className="sm:p-5 lg:p-0">
             <Image className='w-full object-cover object-center lg:w-11/12 xl:w-9/12' src='/assets/ser01.jpg' alt=' ' width={150} height={450}></Image>
           </div>
 
