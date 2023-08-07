@@ -4,7 +4,7 @@ import { useRouter } from 'next/router';
 import Link from 'next/link';
 
 const style: CSSProperties = {
-    color: '#0070f3',
+    color: 'rgba(255, 195, 55, 1)',
     textDecoration: 'underline',
 }
 

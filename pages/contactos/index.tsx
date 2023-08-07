@@ -7,6 +7,7 @@ import { Header } from '../../components/layouts/Header';
 import {
   backGroundContactos,  
 } from '../../components/styles'
+import { FormularioContacto } from '@/components/layouts/FormularioContacto';
 
 
 
@@ -26,6 +27,7 @@ export default function Contacto() {
       Top={false}
        />
 
+      <FormularioContacto/>
 
 
       </MainLayout>

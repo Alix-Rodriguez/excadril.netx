@@ -6,3 +6,9 @@
   @import url('https://fonts.googleapis.com/css2?family=Raleway:ital@1&display=swap');
 
   
+.bg-yellow-melon{
+  background-color: #ffc43946;
+}
+.border-yellow-melon{
+  border-color: #ffc43946;
+}

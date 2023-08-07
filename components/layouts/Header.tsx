@@ -42,7 +42,7 @@ export const Header: FC<Props> = ({ backGround,YellowSpan,P1,P2, H2 , h2Opcion, 
        { P2 }
         </h3>
 
-    <div style={backGround2} className=' w-6/12 left-0 absolute bg-no-repeat '></div>
+    <div style={backGround2} className=' w-full left-0 absolute bg-no-repeat '></div>
     <div style={backGround3} className=' w-full absolute bg-no-repeat'></div>
     <div style={backGround4} className=' w-full absolute '></div>
     </section>

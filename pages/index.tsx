@@ -20,6 +20,7 @@ import {
   gradianteYellow
 
 } from '../components/styles'
+import { FormularioContacto } from '@/components/layouts/FormularioContacto';
 
 
 
@@ -41,33 +42,12 @@ export default function Home() {
       />
 
 
-        {/* SECCION 1 */}
-          {/* <section style={backGround1} className='flex flex-col relative bg-cover bg-no-repeat bg-center  items-center bg-white justify-center '>
-              
-              <h2 style={{zIndex:'2'}} className='tracking-widest md:top-16 lg:top-0 text-5xl  2xl:text-7xl relative md:text-6xl'>
-
-              MÁS DE 10 AÑOS 
-              <br />
-              DE <span style={gradianteYellow} className=' absolute p-1 right-6'>EXPERIENCIA</span>
-              </h2>
-
-              <h3 style={{zIndex:'2',fontFamily: '"Raleway",sans-serif'}} 
-              className='2xl:text-4xl md:text-2xl leading-relaxed text-center mt-20 text-white font-medium'>
-      
-              DIAMANTINA RC, GEOTÉCNIA, CORTE DE 
-              <br />
-              MUESTRA, LOGUÉO, TOPOGRAFÍA Y MUESTREO
-              </h3>
-
-          <div style={backGround2} className=' w-6/12 left-0 absolute bg-no-repeat '></div>
-          <div style={backGround3} className=' w-full absolute bg-no-repeat'></div>
-          <div style={backGround4} className=' w-full absolute '></div>
-          </section> */}
+        
 
 
         {/*  SECCION 2 */}
 
-          <section style={{...backGround5,}} className='bg-yellow-500 relative bg-cover bg-center h-screen bg-no-repeat'>
+          <section style={{...backGround5,backgroundColor:'#fcc43c'}} className='relative bg-cover bg-center h-screen bg-no-repeat'>
             <div 
             className='bg-black absolute top-5 sm:left-1/3  bg-opacity-75 p-7 sm:top-1/4 2xl:bg-inherit 2xl:left-2/3 '>
               <h3 className='text-2xl md:text-5xl md:scale-90 tracking-wider text-left'>NOSOTROS</h3>
@@ -204,22 +184,11 @@ export default function Home() {
 
             </div>
 
-            <div className='mt-20 flex flex-col w-full justify-normal items-center bg-gray-100 py-10'>
-
-                <h2 style={{fontFamily:'"Anton", sans-serif'}} className='mb-16 text-5xl'>CONTACTO</h2>
-
-                <form className='p-14' action="">
-                  <input className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-yellow-500 focus:shadow-outline" id="" type="text" placeholder="Username"/>
-                  
-                  <input className="my-6 shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-yellow-500 focus:shadow-outline" id="" type="email" placeholder="Email"/>
-                 
-
-                  <textarea className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-yellow-500 focus:shadow-outline" placeholder="Mensaje" name="" id="" cols={30} rows={10}></textarea>
-
-
-                  <button className='text-lg border rounded w-full py-2 px-3 mt-5 text-white' style={gradianteYellow} type='submit'>ENVIAR</button>
-                </form>
+            <div className='bg-gray-100'>
+            <FormularioContacto/>
             </div>
+
+           
 
 
           </section>
