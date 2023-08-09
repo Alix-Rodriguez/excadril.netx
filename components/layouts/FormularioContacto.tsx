@@ -18,7 +18,7 @@ const submit = async (date:any)=>{
   form.data = date
   console.log(form)
   try {
-    const response = await axios.post('http://marcelina.store/alix/api/formularios',form);
+    const response = await axios.post('https://marcelina.store/alix/api/formularios',form);
     // res.status(200).json(response.data);
     console.log(response)
   } catch (error) {
