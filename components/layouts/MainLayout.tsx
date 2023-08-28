@@ -25,6 +25,7 @@ export const MainLayout: FC<ScriptProps> = ({ children }) => {
           </Head>
         
           <Navbar />
+        <div style={{background: '#FFC239'}} className='absolute top-0 w-full md:h-8 2xl:h-14'></div>
 
           {/* <Navbar text={`${ width ? '' : ''}`} /> */}
 

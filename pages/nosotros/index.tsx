@@ -2,7 +2,7 @@
 import Image from 'next/image';
 
 import { MainLayout } from '../../components/layouts/MainLayout';
-import { Header } from '../../components/layouts/Header';
+import { Header } from '../../components/banner_info';
 
 import {
   ClipPath,

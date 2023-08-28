@@ -3,23 +3,13 @@ import { CSSProperties } from 'react';
 import Image from 'next/image';
 
 import { MainLayout } from '../components/layouts/MainLayout';
-import { Header } from '../components/layouts/Header';
+import { Banner } from '../components/banner_info';
 
-// import {
-//   backGround1,
-//   // backGround2,
-//   // backGround3,
-//   // backGround4,
-//   backGround5,
-//   backGround6,
-//   fontRaleway,
-//   sombraImg,
-//   gradianteButton,
-//   ClipPath,
-//   ClipPath2,
-//   gradianteYellow
-
-// } from '../components/styles'
+import {
+  backGround1,
+  backGroundBanner1,
+  backGroundBanner2,
+} from '../components/styles'
 
 // import { FormularioContacto } from '@/components/layouts/FormularioContacto';
 
@@ -27,33 +17,50 @@ import { Header } from '../components/layouts/Header';
 
 export default function Home() {
   return (
-      <>
+    <>
       <MainLayout>
 
-      {/* <Header 
-      backGround={backGround1}
-      YellowSpan='EXPERIENCIA'
-      H2='MÁS DE 10 AÑOS'
-      h2Opcion = 'DE'
-      P1='DIAMANTINA RC, GEOTÉCNIA, CORTE DE'
-      P2='MUESTRA, LOGUÉO, TOPOGRAFÍA Y MUESTREO' 
-      styleSpan={true}  
-      CentradoSpan={false}
-      Top={true}
-      /> */}
+        <div style={backGround1} className='flex justify-center items-end'>
+
+          <div className='w-3/4'>
+            <Banner
+              buttoBool={true}
+              h1='SOLUCIONES EN'
+              span='PERFORACIONES'
+              backGround={backGroundBanner1}
+              p='Excadrill Internacional, brinda diversos servicios en perforación desde el año 2010, mejorando sus resultados de manera progresiva con cada proyecto realizado, es así que hemos logrado determinar el punto óptimo de operación, considerando los parámetros'
+              position={true}
+            />
+          </div>
 
 
-    {/* SECCION 2 */}
+
+        </div>
 
 
-    {/* SECCION 3 */}
+        {/* SECCION 2 */}
 
 
-    {/* SECCION 4 */}
-        
-          
+        {/* SECCION 3 */}
+
+
+        {/* SECCION 4 */}
+
+        <section className='flex justify-center items-end'>
+          <div className='w-3/4'>
+            <Banner
+              buttoBool={false}
+              h1='RELACIONES'
+              span='COMUNITARIAS'
+              backGround={backGroundBanner2}
+              p='Excadrill Internacional dentro de sus compromisos, tiene el respeto a las costumbres, tradiciones y actividades de las comunidades, así como la protección ambiental en la gestión operacional. Además en coordinación con nuestros clientes, contratamos personal de comunidades, contribuyendo al desarrollo sostenible y mejora de la calidad de vida y convivencia en armonia con las comunidades'
+              position={false}
+            />
+          </div>
+
+        </section>
 
       </MainLayout>
-      </>
+    </>
   )
 }

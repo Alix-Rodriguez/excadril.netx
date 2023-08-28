@@ -21,7 +21,7 @@ export const ActiveLink: FC<Props> = ({ id ,text, href }) => {
 
     return (
         <Link href={ href } legacyBehavior>
-            <a className={`text-white text-2xl md:pr-5 pl-10 ${id > 1 ? 'md:border-l-2' : ''}`} style={ asPath === href ? style : undefined }>{ text }</a>
+            <a className={`text-black lg:text-white md:text-xs 2xl:text-2xl md:pr-5 pl-10 ${id > 1 ? 'md:border-l-2' : ''}`} style={ asPath === href ? style : undefined }>{ text }</a>
         </Link>
     );
 };
