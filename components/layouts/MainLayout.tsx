@@ -15,7 +15,7 @@ export const MainLayout: FC<ScriptProps> = ({ children }) => {
   
 
     return (
-        <div >
+        <div>
           
           <Head>
             <title>Excadrill</title>
@@ -35,7 +35,7 @@ export const MainLayout: FC<ScriptProps> = ({ children }) => {
     
           </main>     
 
-          <Footer/>
+          {/* <Footer/> */}
         </div>
       )
 };

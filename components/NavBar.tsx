@@ -5,7 +5,6 @@ import { useRouter } from 'next/router';
 import {useEffect, useState } from 'react';
 import { RxHamburgerMenu } from "react-icons/rx";
 import { GrClose } from "react-icons/gr";
-import Logo from '../public/assets/logo.svg'
 import Logo2 from '../public/assets/logo2.svg'
 
 const menuItems = [
@@ -81,7 +80,8 @@ export const Navbar = () => {
     className={`absolute z-10 w-full items-center justify-between md:justify-around px-9 flex mt-16 ${width ? '' : '   flex-col lg:flex-row  justify-center '}`} >
         <Link href="/" legacyBehavior>
             <a className='basis-1/5 mb-5'>
-            <Image className={`${img ? 'scale-150' : 'scale-150 md:w-80'} sm:scale-100 `}  src={ img ? Logo : Logo2} alt='Logo' width={150} height={0}></Image>  
+            <Image className={`scale-150 md:w-80 sm:scale-100 `}  
+            src={Logo2} alt='Logo' width={150} height={0}></Image>  
             </a>
         </Link>
         <ul className=' hidden items-center md:flex justify-around basis-1/2 md:min-w-max'>
@@ -111,7 +111,7 @@ export const Navbar = () => {
           ${ !click ? '' : '-translate-x-full'}`}>
         <Link href="/" legacyBehavior>
             <a className=''>
-            <Image className='scale-125'  src={Logo} alt='Logo' width={150} height={0}></Image>  
+            <Image className='scale-125'  src={Logo2} alt='Logo' width={150} height={0}></Image>  
             </a>
         </Link>
         <div className='bg-yellow-500 absolute top-10 right-10  md:hidden '>

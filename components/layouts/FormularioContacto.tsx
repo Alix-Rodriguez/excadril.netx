@@ -5,7 +5,7 @@ import { useForm } from "react-hook-form";
 import { ScriptProps } from 'next/script';
 
 
-import { gradianteYellow } from '../styles';
+// import { gradianteYellow } from '../styles';
 import axios from 'axios';
 
 
@@ -63,7 +63,7 @@ export const FormularioContacto: FC = () => {
                   <textarea {...register('descripcion')} className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-yellow-500 focus:shadow-outline" placeholder="Mensaje"  cols={30} rows={10}></textarea>
 
 
-                  <button className='text-lg border rounded w-full py-2 px-3 mt-5 text-white' style={gradianteYellow} type='submit'>ENVIAR</button>
+                  {/* <button className='text-lg border rounded w-full py-2 px-3 mt-5 text-white' style={gradianteYellow} type='submit'>ENVIAR</button> */}
                 </form>
             </div>
       )
