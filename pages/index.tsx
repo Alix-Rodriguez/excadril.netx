@@ -45,6 +45,7 @@ export default function Home() {
 
 
         {/* SECCION 4 */}
+        
 
         <section className='flex justify-center items-end'>
           <div className='w-11/12 md:w-3/4'>
