@@ -1,8 +1,8 @@
-// import { CSSProperties } from 'react';
+ import { CSSProperties } from 'react';
 
-// import camionBackGround from '../public/assets/slide.jpg'
-// import lineaAmarilla from '../public/assets/header-decoslide-01.svg'
-// import lineaAmarilla2 from '../public/assets/header-decoslide-02.svg'
+ import rectangulo_black from '@/public/assets/rectangulo_black.png'
+ import banner1  from '@/public/assets/banner_index_1.png'
+ import banner2 from '../public/assets/banner_index_2.png'
 // import logoLide from '../public/assets/logoslide.svg'
 // import nosotros from '../public/assets/nosotros.png'
 // import slideNosotros from '../public/assets/slideNosotros.png'
@@ -10,22 +10,28 @@
 // import slideEquipo from '../public/assets/slideEquipos.png'
 // import slideContacto from '../public/assets/slideContacto.jpg'
 
+//imagenes moises
+
+export const backgroundColor:CSSProperties = {backgroundColor:'#FFC239'};
+export const textColor:CSSProperties = {color:'#FFC239'};
 
 
-// export const backGround1: CSSProperties = {
-//     backgroundImage: `url(${camionBackGround.src})`,
-//     color: 'rgb(255, 255, 255)',
-//     height: '120vh',
-//     fontFamily:'"Anton", sans-serif'
-// }
+ export const backGround1: CSSProperties = {
+     backgroundImage: `url(${rectangulo_black.src})`,
+     backgroundRepeat:'no-repeat',
+     backgroundPosition:'right',
+     height:'85vh',
+     backgroundSize:'80% 100%',
+ }
 
-// export const backGround2: CSSProperties = {
-//   backgroundImage: `url(${lineaAmarilla.src})`,
-//   zIndex:'2',
-//   backgroundPosition:'bottom center',
-//   height: '120vh',
-
-// }
+ export const backGroundBanner1: CSSProperties = {
+   backgroundImage: `url(${banner1.src})`,
+   backgroundPosition:'center center',
+ }
+ export const backGroundBanner2: CSSProperties = {
+   backgroundImage: `url(${banner2.src})`,
+   backgroundPosition:'center center',
+ }
 
 // export const backGround3: CSSProperties = {
 //   backgroundImage: `url(${logoLide.src})`,

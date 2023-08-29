@@ -3,12 +3,30 @@
 @tailwind utilities;
 
 
-  @import url('https://fonts.googleapis.com/css2?family=Raleway:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 
-  
-.bg-yellow-melon{
-  background-color: #ffc43946;
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Rubik:ital,wght@1,300&display=swap');
+
+
+.w-min{
+  min-width: 15rem;
+}  
+
+.radius{
+  border-radius: 82px;
 }
-.border-yellow-melon{
-  border-color: #ffc43946;
+
+@media (max-width: 414px) {
+
+.w-min{
+  min-width: unset;
+}  
+
+.background-white{
+  background: white !important;
 }
+
+
+}
+
