@@ -80,11 +80,11 @@ export const Navbar = () => {
 
   return (
     <>
-      <nav style={{ fontFamily: '"Raleway", sans-serif', fontStyle: 'oblique' }}
-        className={`absolute z-10 w-full items-center justify-between lg:justify-around px-9 flex mt-16 `} >
+      <nav style={{ fontFamily: '"Rubik", sans-serif'}}
+        className={`absolute z-10 w-full items-center justify-between lg:justify-around  lg:px-48 flex mt-5 md:mt-16 px-5 `} >
         <Link href="/" legacyBehavior>
-          <a className='basis-2/5 md:basis-1/5 mb-5'>
-            <Image className={`scale-150 md:w-80 sm:scale-100 object-cover`}
+          <a className='basis-2/5 w-min md:basis-1/4 mb-5'>
+            <Image className={`scale-125 md:w-80 sm:scale-100 object-cover`}
               src={Logo2} alt='Logo' width={350} height={150}></Image>
           </a>
         </Link>
@@ -92,13 +92,13 @@ export const Navbar = () => {
 
           {
             menuItems.map(({ id, text, href }) => (
-              <li key={href}>
+              <li className={`${id > 1 ? 'md:border-l-2' : ''} h-12`}   key={href}>
                 <ActiveLink id={id} text={text} href={href} />
               </li>
             ))
 
           }
-          <li className={`md:ml-4 lg:ml-16  text-white md:text-xs 2xl:text-2xl`}>
+          <li className={`md:border-l-2 h-12 px-6  text-white md:text-xs lg:text-lg 2xl:text-2xl`}>
             PE ▼
           </li>
         </ul>
@@ -111,7 +111,7 @@ export const Navbar = () => {
       </nav>
 
       {/* menu adaptado */}
-      <nav className={`bg-white flex flex-col rounded-ee-full lg:hidden justify-center gap-14 items-center opacity-95 fixed z-20 h-screen w-screen 
+      <nav style={{ fontFamily: '"Rubik", sans-serif'}} className={`bg-white flex flex-col rounded-ee-full lg:hidden justify-center gap-14 items-center opacity-95 fixed z-20 h-screen w-screen 
           ${!click ? '' : '-translate-x-full'}`}>
         <Link href="/" legacyBehavior>
           <a className=''>

@@ -20,9 +20,9 @@ export default function Home() {
     <>
       <MainLayout>
 
-        <div style={backGround1} className='flex justify-center items-end'>
+        <div style={backGround1} className='flex background-white justify-center items-center lg:items-end'>
 
-          <div className='w-3/4'>
+          <div className=' w-11/12 md:w-3/4'>
             <Banner
               buttoBool={true}
               h1='SOLUCIONES EN'
@@ -47,7 +47,7 @@ export default function Home() {
         {/* SECCION 4 */}
 
         <section className='flex justify-center items-end'>
-          <div className='w-3/4'>
+          <div className='w-11/12 md:w-3/4'>
             <Banner
               buttoBool={false}
               h1='RELACIONES'
