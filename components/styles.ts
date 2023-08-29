@@ -1,4 +1,4 @@
-// import { CSSProperties } from 'react';
+//import { CSSProperties } from 'react';
 
 // import camionBackGround from '../public/assets/slide.jpg'
 // import lineaAmarilla from '../public/assets/header-decoslide-01.svg'

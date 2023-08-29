@@ -2,13 +2,33 @@
 @tailwind components;
 @tailwind utilities;
 
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital@1&display=swap");
 
-  @import url('https://fonts.googleapis.com/css2?family=Raleway:ital@1&display=swap');
-
-  
-.bg-yellow-melon{
+.bg-yellow-melon {
   background-color: #ffc43946;
 }
-.border-yellow-melon{
+.border-yellow-melon {
   border-color: #ffc43946;
+}
+
+.bg-estilo-A {
+  background-color: #ffc239;
+}
+
+.titulo-A {
+  font-size: 40px;
+  font-style: normal;
+  line-height: 48px;
+  width: 390px;
+}
+
+.parrafo-A {
+  font-size: 17px;
+  font-style: normal;
+  line-height: normal;
+  width: 390px;
+}
+
+.paralelogramo {
+  transform: skew(-30deg);
 }
