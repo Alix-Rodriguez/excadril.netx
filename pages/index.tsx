@@ -110,7 +110,7 @@ export default function Home() {
 
               <div>
 
-                <div className='h-5/6 relative'>
+                <div className='h-5/6 w-[80%] m-auto relative'>
 
                 <Image className='object-cover object-center h-full w-11/12 md:absolute shadow-2xl' src="/assets/ser03.jpg" alt="imagen construccion" width={295} height={0}  />
 
@@ -142,12 +142,12 @@ export default function Home() {
             </div>
 
             <div className='mx-auto mt-10 2xl:mt-0 text-5xl text-white '>
-              <button className='p-3 tracking-wider rounded-lg' style={gradianteButton}>CONTACTAR</button>
+              <button className=' p-2 2xl:p-3  tracking-wider text-[1.5rem] 2xl:text-[2rem] rounded-lg' style={gradianteButton}>CONTACTAR</button>
             </div>
 
           </section>
 
-        {/*  SECCION 4 */}
+         {/* SECCION 4
 
           <section style={{...ClipPath,...gradianteYellow}} className='h-screen relative overflow-hidden'>
 
@@ -160,13 +160,13 @@ export default function Home() {
 
             <div style={{borderTopLeftRadius:'10rem'}} className='absolute bottom-0 right-0 bg-white h-2/5 w-2/4 '></div>
             <Image className='absolute bottom-0 object-cover right-0 lg:h-96' src="/assets/equipo-01.png" alt='imagen de contruccion' width={1200} height={0}/>
-          </section>
+          </section> */}
 
         {/*  SECCION 5 */}
 
           <section className='h-full w-full' >
 
-            <div className='mt-20 flex flex-col items-center justify-center w-full'>
+            <div className='mt-20 px-5 flex flex-col items-center justify-center w-full'>
 
       
               <div style={{...ClipPath2,...gradianteYellow}} className=' py-3 px-20'>
@@ -176,10 +176,10 @@ export default function Home() {
               </div>
 
               <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 items-center gap-28 mt-12'>
-                <Image className='h-72 w-72 object-contain' src="/assets/cliente01.jpg" alt='logo de empresas' width={292} height={0} ></Image>
-                <Image className='h-72 w-72 object-contain' src="/assets/cliente02.jpg" alt='logo de empresas' width={292} height={0} ></Image>
-                <Image className='h-72 w-72 object-contain' src="/assets/cliente03.png" alt='logo de empresas' width={292} height={0} ></Image>
-                <Image className='h-72 w-72 object-contain' src="/assets/cliente04.png" alt='logo de empresas' width={292} height={0} ></Image>
+                <Image className='2xl:h-72 h-44 2xl:w-72 object-contain' src="/assets/cliente01.jpg" alt='logo de empresas' width={292} height={0} ></Image>
+                <Image className='2xl:h-72 h-44 2xl:w-72 object-contain' src="/assets/cliente02.jpg" alt='logo de empresas' width={292} height={0} ></Image>
+                <Image className='2xl:h-72 h-44 2xl:w-72 object-contain' src="/assets/cliente03.png" alt='logo de empresas' width={292} height={0} ></Image>
+                <Image className='2xl:h-72 h-44 2xl:w-72 object-contain' src="/assets/cliente04.png" alt='logo de empresas' width={292} height={0} ></Image>
               </div>
 
             </div>

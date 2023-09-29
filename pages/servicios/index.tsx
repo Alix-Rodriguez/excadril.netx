@@ -29,9 +29,12 @@ export default function Servicios() {
          <div className='relative w-full pb-10'>
          <div style={backGround6} className='bg-no-repeat w-full absolute left-0 top-0'></div>
 
-         <section style={{fontFamily:'"Anton", sans-serif',}}
-           className='flex relative flex-col h-full 2xl:h-screen w-3/4 m-auto '>
+        {/*  SECCION 3 */}
 
+         {/*  SECCION 3 */}
+
+         <section style={{fontFamily:'"Anton", sans-serif'}}
+           className='flex flex-col h-full 2xl:h-screen w-3/4 m-auto '>
 
             <div className='mt-32 pl-20'>
 
@@ -68,7 +71,7 @@ export default function Servicios() {
 
               <div>
 
-                <div className='h-5/6 relative'>
+                <div className='h-5/6 w-[80%] m-auto relative'>
 
                 <Image className='object-cover object-center h-full w-11/12 md:absolute shadow-2xl' src="/assets/ser03.jpg" alt="imagen construccion" width={295} height={0}  />
 
@@ -100,7 +103,7 @@ export default function Servicios() {
             </div>
 
             <div className='mx-auto mt-10 2xl:mt-0 text-5xl text-white '>
-              <button className='p-3 tracking-wider rounded-lg' style={gradianteButton}>CONTACTAR</button>
+              <button className=' p-2 2xl:p-3  tracking-wider text-[1.5rem] 2xl:text-[2rem] rounded-lg' style={gradianteButton}>CONTACTAR</button>
             </div>
 
           </section>

@@ -36,10 +36,10 @@ export default function Nosotros() {
         {/*  SECCION 2 */}
 
         <section className=' relative '>
-          <div style={backGround6} className='bg-no-repeat w-screen absolute left-0 '></div>
+          <div style={backGround6} className='bg-no-repeat w-full absolute left-0 '></div>
           <div style={{ height: '32rem' }}
             className='flex w-full flex-col gap-7  justify-end  items-center'>
-            <p style={fontRaleway} className=' text-xs w-4/5 leading-4 md:w-3/4 xl:w-2/4 text-justify md:text-base md:leading-7  lg:text-lg font-semibold '>
+            <p style={fontRaleway} className=' text-xs w-4/5 leading-4 md:w-3/4 xl:w-2/4 text-justify md:text-base md:leading-7  lg:text-base 2xl:text-lg font-semibold '>
               EXCADRILL INTERNACIONAL es una empresa especializada y con amplia experiencia; constrituida para brindar servicios en el sector Minero y construcción. Fue fundada hace mas de 10 años y desde entonces sus operaciones han tenido un crecimiento sostenido. Venimos ejecutando proyectos de perforación en superficie e interior mina.
             </p>
             <p style={fontRaleway} className=' text-xs  w-4/5 leading-4 md:w-3/4 xl:w-2/4 text-justify  md:text-base md:leading-7 font-semibold lg:text-lg '>
@@ -52,15 +52,15 @@ export default function Nosotros() {
 
         <section style={{ ...ClipPath, ...gradianteYellow }} className=' h-full gap-10 pb-20 pt-10 md:pb-0 md:pt-0 sm:h-screen relative grid grid-cols-1 md:grid-cols-2 justify-center items-center  overflow-hidden'>
           <div className='flex flex-col justify-center pt-40 md:pt-0 items-center gap-7 md:border-r-4 '>
-            <Image className='w-1/4 lg:w-64' src='/assets/VISION.png' alt=' ' width={150} height={150}></Image>
+            <Image className='w-1/4  2xl:w-64' src='/assets/VISION.png' alt='vision' width={150} height={150}></Image>
             <h3 style={{ fontFamily: '"Anton", sans-serif' }} className='text-3xl lg:text-5xl scale-90 text-white'>VISIÓN</h3>
-            <p style={fontRaleway} className='text-sm w-3/5 text-center lg:text-2xl font-normal text-white '>Ser una empresa lider en perforación a nivel latinoamericano, siendo reconocida como la solución e minería y construcción; por nuestra experiencia y compromiso con nuestros clientes.</p>
+            <p style={fontRaleway} className='text-sm w-3/5 text-center 2xl:text-2xl font-normal text-white '>Ser una empresa lider en perforación a nivel latinoamericano, siendo reconocida como la solución e minería y construcción; por nuestra experiencia y compromiso con nuestros clientes.</p>
           </div>
 
           <div className='flex flex-col justify-center items-center gap-7'>
-            <Image className='w-1/4 lg:w-64' src='/assets/MISION.png' alt=' ' width={150} height={150}></Image>
+            <Image className='w-1/4  2xl:w-64' src='/assets/MISION.png' alt='Mision' width={150} height={150}></Image>
             <h3 style={{ fontFamily: '"Anton", sans-serif' }} className='text-3xl lg:text-5xl scale-90 text-white'>MISIÓN</h3>
-            <p style={fontRaleway} className='text-sm w-4/5 text-center lg:text-2xl font-normal text-white '>Proveer los servicios de perforación orientada a la satisfacción de nuestros clientes, garantizado por nuestro personal con amplia experiencia y equipos de alta tecnología, cumpliendo con estándares en seguridad, salud ocupacional, medio ambiente y calidad, que nos permiten lograr excelentes resultados.</p>
+            <p style={fontRaleway} className='text-sm w-4/5 text-center 2xl:text-2xl font-normal text-white '>Proveer los servicios de perforación orientada a la satisfacción de nuestros clientes, garantizado por nuestro personal con amplia experiencia y equipos de alta tecnología, cumpliendo con estándares en seguridad, salud ocupacional, medio ambiente y calidad, que nos permiten lograr excelentes resultados.</p>
           </div>
         </section>
 
